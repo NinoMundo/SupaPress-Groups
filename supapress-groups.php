@@ -8,7 +8,6 @@
  * License: GPL v2 or later
  * Text Domain: supapress-groups
  * Domain Path: /languages
- * Requires Plugins: supapress, buddypress
  */
 
 if (!defined('ABSPATH')) {
@@ -57,7 +56,7 @@ class SupaPress_Groups {
             include_once(ABSPATH . 'wp-admin/includes/plugin.php');
         }
         
-        $supapress_active = is_plugin_active('supapress/supapress.php') || 
+        $supapress_active = is_plugin_active('supapress-core/supapress-core.php') || 
                            (defined('SUPAPRESS_VERSION') && class_exists('SupaPress'));
         
         if (!$supapress_active) {
